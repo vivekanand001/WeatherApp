@@ -1,6 +1,6 @@
 import requests
 def forecastweather(lat,lon):
-    weatherurl=f"https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid=bfdb1229da727c6b3175392745d09407"
+    weatherurl=f"https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid=add ur apikey"
     weatherdata=requests.get(weatherurl).json()
     weatherdata={
         "temperature":weatherdata["main"]['temp'],
